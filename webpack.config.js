@@ -120,7 +120,7 @@ module.exports = {
          //这个plugin是用于引入dll里生成的json的。
         new webpack.DllReferencePlugin({
            context: __dirname,
-           manifest: require('./lib/manifest.json')
+           manifest: require('./js/lib/manifest.json')
         })
     ],
     devServer: {

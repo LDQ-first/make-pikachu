@@ -129,12 +129,12 @@ module.exports = {
         new webpack.HashedModuleIdsPlugin(),
         new webpack.DllReferencePlugin({
            context: __dirname,
-           manifest: require('./lib/manifest.json')
+           manifest: require('./js/lib/manifest.json')
         }),
         new CopyWebpackPlugin([
           {
-              from: path.join(__dirname, './lib'),
-              to: path.join(__dirname, './dist/lib'),
+              from: path.join(__dirname, './js/lib'),
+              to: path.join(__dirname, './dist/js/lib'),
             //  ignore: ['.*']
           }
       ])
