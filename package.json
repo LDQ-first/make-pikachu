@@ -1,0 +1,58 @@
+{
+  "name": "make-pikachu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cnpm install --save-dev webpack-dev-server",
+    "start": "cross-env NODE_ENV=development && webpack-dev-server --progress",
+    "build": "cross-env NODE_ENV=production && webpack --config ./webpack.production.config.js --progress",
+    "git": "git add . && git commit -m 'modify' && git push",
+    "babel": "cnpm install babel-loader babel-core babel-preset-es2015 --save-dev",
+    "css": "cnpm install --save-dev style-loader css-loader",
+    "autoprefixer": "cnpm install --save-dev autoprefixer",
+    "postcss": "cnpm install --save-dev postcss-loader",
+    "extract": "cnpm install --save-dev extract-text-webpack-plugin",
+    "sass": "cnpm install sass-loader node-sass --save-dev ",
+    "clean": "cnpm install clean-webpack-plugin --save-dev",
+    "file": "cnpm install --save-dev file-loader",
+    "url": "cnpm install --save-dev url-loader",
+    "dll": "webpack --config ./webpack.dll.config.js --progress",
+    "copy": "cnpm install --save-dev copy-webpack-plugin",
+    "crossenv": "cnpm install cross-env --save-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LDQ-first/make-pikachu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LDQ-first/make-pikachu/issues"
+  },
+  "homepage": "https://github.com/LDQ-first/make-pikachu#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "clean": "^4.0.2",
+    "clean-webpack-plugin": "^0.1.18",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "npm": "^5.6.0",
+    "postcss-loader": "^2.0.10",
+    "run": "^1.4.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
