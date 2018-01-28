@@ -3,6 +3,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 const extractCSS = new ExtractTextPlugin({
     filename: 'css/main.[name].[contenthash:8].css'
@@ -130,5 +131,12 @@ module.exports = {
            context: __dirname,
            manifest: require('./lib/manifest.json')
         }),
+        new CopyWebpackPlugin([
+          {
+              from: path.join(__dirname, './lib'),
+              to: path.join(__dirname, './dist/lib'),
+            //  ignore: ['.*']
+          }
+      ])
     ]
 }
