@@ -63,7 +63,7 @@ module.exports = {
                     {
                       loader: "css-loader",
                       options: {
-                          minimize: true //压缩
+                          minimize: false //压缩
                         }
                     }, 
                     {
