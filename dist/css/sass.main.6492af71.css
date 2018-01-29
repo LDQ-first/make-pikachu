@@ -1,0 +1,96 @@
+/*! author by ldq-first */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+  *::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+
+button {
+  border: none;
+  outline: none; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh; }
+
+.code-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 50%;
+  padding: 10px;
+  overflow: auto; }
+  .code-wrapper #code {
+    height: 100%;
+    overflow: auto; }
+
+.preview-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 50%; }
+  .preview-wrapper .preview {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .preview-wrapper .preview .wrapper {
+      width: 100%;
+      height: 165px;
+      position: relative; }
+
+.actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .actions button {
+    margin: 10px;
+    padding: 0.42667rem 0.53333rem;
+    color: #fff;
+    width: 5.33333rem;
+    height: 2.13333rem;
+    border-radius: 1.06667rem/50%;
+    cursor: pointer; }
+    .actions button.slow {
+      -webkit-box-shadow: 0 2px 6px 0 rgba(255, 108, 95, 0.4);
+              box-shadow: 0 2px 6px 0 rgba(255, 108, 95, 0.4);
+      background: linear-gradient(112deg, #ff4f81, #ff6c5f); }
+    .actions button.normal {
+      -webkit-box-shadow: 0 2px 6px 0 rgba(45, 222, 152, 0.4);
+              box-shadow: 0 2px 6px 0 rgba(45, 222, 152, 0.4);
+      background: linear-gradient(284deg, #1cc7d0, #2dde98); }
+    .actions button.fast {
+      -webkit-box-shadow: 0 2px 6px 0 rgba(51, 105, 231, 0.4);
+              box-shadow: 0 2px 6px 0 rgba(51, 105, 231, 0.4);
+      background: linear-gradient(80deg, #00aeff, #3369e7); }
+    .actions button.active {
+      border: 2px solid rgba(72, 37, 228, 0.4); }
+
+/*# sourceMappingURL=sass.main.6492af71.css.map*/
