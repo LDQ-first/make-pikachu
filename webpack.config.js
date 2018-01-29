@@ -116,7 +116,6 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({
             name: 'manifest'
         }),
-        new CleanWebpackPlugin(['build']),
          //这个plugin是用于引入dll里生成的json的。
         new webpack.DllReferencePlugin({
            context: __dirname,

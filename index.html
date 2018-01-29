@@ -7,17 +7,29 @@
   <title>Pikachu</title>
 </head>
 <body>
-  <div class="wrapper">
-    <div class="nose"></div>
-    <div class="eye left"></div>
-    <div class="eye right"></div>
-    <div class="face left"></div>
-    <div class="face right"></div>
-    <div class="upperlip left"></div>
-    <div class="upperlip right"></div>
-    <div class="lowerlip-wrapper">
-        <div class="lowerlip"></div>
+  <div class="code-wrapper">
+      <pre id="code"></pre>
+  </div>
+  <div class="preview-wrapper">
+    <div class="preview">
+      <div class="wrapper">
+          <div class="nose"></div>
+          <div class="eye left"></div>
+          <div class="eye right"></div>
+          <div class="face left"></div>
+          <div class="face right"></div>
+          <div class="upperlip left"></div>
+          <div class="upperlip right"></div>
+          <div class="lowerlip-wrapper">
+              <div class="lowerlip"></div>
+          </div>
+        </div>
     </div>
+  </div>
+  <div class="actions">
+    <button data-speed="slow" class="slow">慢速</button>
+    <button data-speed="normal" class="normal active">中速</button>
+    <button data-speed="fast" class="fast">快速</button>
   </div>
   <script src="./js/lib/vendor.dll.js"></script>
 </body>

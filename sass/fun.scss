@@ -1,0 +1,6 @@
+$uiWidth: 750;
+$relWidth: 640;
+
+@function PTR($px, $base: 16) {
+  @return $px * ($relWidth / $uiWidth) / $base + rem
+}
